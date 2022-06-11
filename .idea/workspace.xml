@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="def3af93-571a-420b-bb46-29b4cf1500e1" name="Changes" comment="connected with spring">
+    <list default="true" id="def3af93-571a-420b-bb46-29b4cf1500e1" name="Changes" comment="connected with spring1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +57,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654973245188</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="connected with spring1">
+      <created>1654975649534</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1654975649534</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -73,7 +80,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="connected with spring" />
-    <option name="LAST_COMMIT_MESSAGE" value="connected with spring" />
+    <MESSAGE value="connected with spring1" />
+    <option name="LAST_COMMIT_MESSAGE" value="connected with spring1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
