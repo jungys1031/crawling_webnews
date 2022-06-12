@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import Home from './Home';
@@ -9,7 +9,6 @@ import Google from './Google';
 
 const App = () => {
   return (
-<router>
  <div>
     <div class="wrap">
       <div class="intro_bg">
@@ -54,7 +53,6 @@ const App = () => {
       </div>
 
     </div>
-</router>
   );
 };
 
