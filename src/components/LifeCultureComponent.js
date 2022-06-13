@@ -1,5 +1,5 @@
 import * as React from 'react';
-import UserService from '../services/ApiService';
+import UserService from '../services/LifeCultureService';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableCell from '@material-ui/core/TableCell';
@@ -8,17 +8,17 @@ import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
 
-class CrawlingComponent extends React.Component {
+class LifeCultureComponent extends React.Component {
     constructor(props){
         super(props)
         this.state = {
-            crawling:[]
+            lifeCulture:[]
         }
     }
 
     componentDidMount(){
-        UserService.getCrawling().then((response) => {
-            this.setState({crawling: response.data})
+        UserService.getLifeCulture().then((response) => {
+            this.setState({lifeCulture: response.data})
         });
     }
 
@@ -34,17 +34,17 @@ class CrawlingComponent extends React.Component {
                       </TableRow>
                     </TableHead>
                     <TableBody>
-                      {this.state.crawling.map(
-                        crawling =>
+                      {this.state.lifeCulture.map(
+                        lifeCulture =>
                         <TableRow
-                          key={crawling.idx}
+                          key={lifeCulture.idx}
                           sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                         >
                           <TableCell component="th" scope="row">
-                            {crawling.idx}
+                            {lifeCulture.idx}
                           </TableCell>
-                          <TableCell align="right">{crawling.word}</TableCell>
-                          <TableCell align="right">{crawling.count}</TableCell>
+                          <TableCell align="right">{lifeCulture.word}</TableCell>
+                          <TableCell align="right">{lifeCulture.count}</TableCell>
                         </TableRow>
                       )}
                     </TableBody>
@@ -54,4 +54,4 @@ class CrawlingComponent extends React.Component {
     }
 }
 
-export default CrawlingComponent
+export default LifeCultureComponent

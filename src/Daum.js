@@ -1,18 +1,17 @@
 import React from 'react';
+import DaumComponent from './components/DaumComponent'
 
 const Daum = () => {
   return (
     <div>
       <h1>Daum</h1>
-      <img src=""/>
-      <ul>
-        <li>정치</li>
-        <li>경제</li>
-        <li>사회</li>
-        <li>생활&문화</li>
-        <li>IT&과학</li>
-        <li>세계</li>
-      </ul>
+      <br/>
+      <img src="https://crawling-bucket1.s3.ap-northeast-2.amazonaws.com/daum"/>
+      <br/>
+      <div class="table_title">
+            <h2 >빈도수 높은 단어 top 100</h2>
+           <div class="table"><DaumComponent /></div>
+          </div>
     </div>
     
   );
